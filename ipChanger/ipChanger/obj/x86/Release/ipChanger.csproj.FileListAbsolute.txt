@@ -1,0 +1,11 @@
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\bin\Release\ipChanger.exe
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\bin\Release\ipChanger.pdb
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ip_Changer.Form1.resources
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ip_Changer.IpSetting.resources
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ip_Changer.Properties.Resources.resources
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ipChanger.csproj.GenerateResource.Cache
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ipChanger.exe
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ipChanger.pdb
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\bin\Release\ipChanger.exe.config
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ipChanger.csprojResolveAssemblyReference.cache
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Release\ip_Changer.WinLicense.resources

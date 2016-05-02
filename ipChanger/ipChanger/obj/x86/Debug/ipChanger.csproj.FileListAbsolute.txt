@@ -1,0 +1,9 @@
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\bin\Debug\ipChanger.exe
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\bin\Debug\ipChanger.pdb
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ip_Changer.Form1.resources
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ip_Changer.Properties.Resources.resources
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ipChanger.csproj.GenerateResource.Cache
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ipChanger.exe
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ipChanger.pdb
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ipChanger.csprojResolveAssemblyReference.cache
+C:\Users\ss\documents\visual studio 2010\Projects\ipChanger\ipChanger\obj\x86\Debug\ip_Changer.IpSetting.resources

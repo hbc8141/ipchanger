@@ -1,0 +1,7 @@
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\obj\x86\Debug\ip_Changer.Form1.resources
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\obj\x86\Debug\ip_Changer.Properties.Resources.resources
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\obj\x86\Debug\ip_Changer.csproj.GenerateResource.Cache
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\bin\Debug\ip_Changer.exe
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\bin\Debug\ip_Changer.pdb
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\obj\x86\Debug\ip_Changer.exe
+C:\Users\ss\AppData\Local\Temporary Projects\ip_Changer\obj\x86\Debug\ip_Changer.pdb
