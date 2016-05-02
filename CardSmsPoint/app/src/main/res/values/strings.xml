@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CardSmsPoint</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="planets_array">
+        <item>국민</item>
+        <item>농협</item>
+        <item>부산</item>
+        <item>우리</item>
+    </string-array>
+</resources>
