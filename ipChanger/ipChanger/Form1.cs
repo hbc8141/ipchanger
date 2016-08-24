@@ -14,25 +14,25 @@ using System.Net.NetworkInformation;
 // 네트워크 인터페이스에 대한 구성, 통계정보 제공
 
 using System.Runtime.InteropServices;
-using System.Net.Mail;
 // ini 파일 읽기, 쓰기
+
 
 namespace ip_Changer
 {
     public partial class Form1 : Form
     {
-        [DllImport("kernel32")]
+        [DllImport("kernel32", CharSet=CharSet.Unicode)]
         private static extern int GetPrivateProfileString(string section, string key, string def, StringBuilder retVal, int size, string filePath);
-
-        [DllImport("kernel32")]
+        // ini파일 읽기
+        [DllImport("kernel32", CharSet=CharSet.Unicode)]
         private static extern long WritePrivateProfileString(string section, string key, string val, string filePath);
+        // ini파일 쓰기
 
         private string filePath = null;
 
         private string[] setList = new string[] { "ip", "submask", "gateway", "masterDns", "slaveDns" };
 
         private IpSetting ipsetting;
-        //private WinLicense winLicense;
         private Cmd cmd;
 
         private Process pro;
@@ -56,7 +56,7 @@ namespace ip_Changer
             sb.Append("/system.ini");
             filePath = sb.ToString();
             sb.Clear();
-
+            MessageBox.Show(filePath);
             pro = new Process();
             proInfo = new ProcessStartInfo();
         } // form 생성        
@@ -86,8 +86,6 @@ namespace ip_Changer
 
             cmd = new Cmd();
             ipsetting = new IpSetting();
-            //winLicense = new WinLicense(cmd);
-            //winLicense = new WinLicense(cmd, pro, proInfo);
 
             readText(filePath, sb);
 
@@ -204,25 +202,6 @@ namespace ip_Changer
             GC.Collect(); // garbage collect
         } // 정품 라이센스 확인
 
-
-        private void changeLicenseBtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("이 기능은 위험하므로 사용할 수 없습니다", "경고");
-            //winLicense.ShowDialog();
-            MailMessage sendMail = new MailMessage();
-            sendMail.From = new MailAddress("hbc8141@naver.com");
-            sendMail.To.Add(new MailAddress("hbc8141@naver.com"));
-            sendMail.Subject = "테스트";
-            sendMail.Body = "내용 엄씀";
-
-            SmtpClient smtpServer = new SmtpClient("smtp.naver.com", 587);
-            smtpServer.UseDefaultCredentials = false;
-            smtpServer.EnableSsl = true; // SSL 암호화
-            smtpServer.DeliveryMethod = SmtpDeliveryMethod.Network; //보내는 전자메일의 메세지 처리방법
-            //smtpServer.Credentials = new System.Net.NetworkCredential("hbc8141", "ha5402!@#");
-            smtpServer.Send(sendMail);// 보내는 사람을 인증하는데 사용되는 자격증명
-        }
-
         private void iP설정초기화ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("확인을 누르시면 IP 설정 값이 초기화됩니다.\r계속하시겠습니까?", "설정", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -283,7 +262,7 @@ namespace ip_Changer
 
         private void showMessage()
         {
-            MessageBox.Show("하병철\n\nCopyright © 2016 SkyVersion. All rights reserved.\n\n위 프로그램은 저작권법에 의해 보호받습니다.\n\n사용에 제한이 없는 프리웨어입니다.", "만든이");
+            MessageBox.Show("하병철\n\nCopyright © 2016 SkyVersion. All rights reserved.\n\n위 프로그램은 개인, 기관, 관공서, 기업에서 무료로 사용가능한 프리웨어입니다.", "만든이");
         } // 제작자 및 만든이 메세지 보여주기
 
         private void readText(string filePath, StringBuilder sb)
@@ -318,14 +297,19 @@ namespace ip_Changer
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (ProcessLength == 1)
+            if (ProcessLength == 1 && ipsetting.IsEscapeKeyDown)
             {
                 WritePrivateProfileString("ip", "ip", ipsetting.IP, filePath);
                 WritePrivateProfileString("submask", "submask", ipsetting.SubnetMask, filePath);
                 WritePrivateProfileString("gateway", "gateway", ipsetting.Gateway, filePath);
                 WritePrivateProfileString("masterDns", "masterDns", ipsetting.MasterDns, filePath);
                 WritePrivateProfileString("slaveDns", "slaveDns", ipsetting.SlaveDns, filePath);
-            }            
+            } // 프로세스가 하나이거나 ipsetting시 esc키를 누르지 않았을 때       
         } // 폼 종료 시 ini 파일에 기록
+
+        private void 문의사항ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("사용중 문의사항이 있으시면 아래 메일로 문의바랍니다.\n문의주시면 매우 빠르게 수정하겠습니다.\n\n문의메일 : hbc8141@naver.com", "문의사항");
+        }
     }
 }

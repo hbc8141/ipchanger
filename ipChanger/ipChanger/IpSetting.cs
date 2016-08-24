@@ -22,33 +22,39 @@ namespace ip_Changer
 
         private void complete_Click(object sender, EventArgs e)
         {
+            IsEscapeKeyDown = false;
             this.Close();
-        } // 창 닫기
+        } // 완료버튼 클릭 시 창 닫기
 
         public string IP{
+            get { return ipInput.Text.ToString(); }
             set{ ipInput.Text = value; }
-            get{ return ipInput.Text.ToString(); }
         }
 
         public string SubnetMask{
+            get { return submaskInput.Text.ToString(); }
             set{ submaskInput.Text = value; }
-            get{ return submaskInput.Text.ToString(); }
         }
 
-        public string Gateway{ 
+        public string Gateway{
+            get { return gatewayInput.Text.ToString(); }
             set{ gatewayInput.Text = value; }
-            get{ return gatewayInput.Text.ToString(); }
         }
 
         public string MasterDns{
-            set { masterDnsInput.Text = value; }
             get { return masterDnsInput.Text.ToString(); }
+            set { masterDnsInput.Text = value; }
         }
 
-        public string SlaveDns
-        {
-            set { slaveDnsInput.Text = value; }
+        public string SlaveDns{
             get { return slaveDnsInput.Text.ToString(); }
+            set { slaveDnsInput.Text = value; }
+        }
+
+        private bool isEscapeKeyDown = false;
+        public bool IsEscapeKeyDown{
+            get { return isEscapeKeyDown; }
+            set { isEscapeKeyDown = value; }
         }
 
         private void ipInput_KeyPress(object sender, KeyPressEventArgs e)
@@ -76,5 +82,13 @@ namespace ip_Changer
             if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != 8 && e.KeyChar != 46)
                 e.Handled = true;
         } // 키 입력 제한
+
+        private void IpSetting_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape){
+                IsEscapeKeyDown = true;
+                this.Close();
+            } // setting창에서 esc키를 눌렀을 시 form 종료
+        } // control에서 keypreview를 등록해야만 이벤트가 정상적으로 작동한다.
     }
 }

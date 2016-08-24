@@ -164,11 +164,13 @@
             this.Controls.Add(this.gatewayLabel);
             this.Controls.Add(this.submaskLabel);
             this.Controls.Add(this.ipLebel);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "IpSetting";
             this.ShowIcon = false;
             this.Text = "IpSetting";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IpSetting_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

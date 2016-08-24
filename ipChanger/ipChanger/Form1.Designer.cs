@@ -47,6 +47,7 @@
             this.licenseCertificationBtn = new System.Windows.Forms.Button();
             this.connectListBox = new System.Windows.Forms.ListBox();
             this.operationalStatusCheckBox = new System.Windows.Forms.CheckBox();
+            this.문의사항ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.connectWayGroup.SuspendLayout();
             this.ipConnectGroup.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             this.fileFToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.makerToolStripMenuItem,
+            this.문의사항ToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileFToolStripMenuItem.Name = "fileFToolStripMenuItem";
             this.fileFToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -75,14 +77,14 @@
             // makerToolStripMenuItem
             // 
             this.makerToolStripMenuItem.Name = "makerToolStripMenuItem";
-            this.makerToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.makerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.makerToolStripMenuItem.Text = "만든 이";
             this.makerToolStripMenuItem.Click += new System.EventHandler(this.makerToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "종료";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -228,6 +230,13 @@
             this.operationalStatusCheckBox.UseVisualStyleBackColor = true;
             this.operationalStatusCheckBox.CheckedChanged += new System.EventHandler(this.operationalStatusCheckBox_CheckedChanged);
             // 
+            // 문의사항ToolStripMenuItem
+            // 
+            this.문의사항ToolStripMenuItem.Name = "문의사항ToolStripMenuItem";
+            this.문의사항ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.문의사항ToolStripMenuItem.Text = "문의사항";
+            this.문의사항ToolStripMenuItem.Click += new System.EventHandler(this.문의사항ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -283,6 +292,7 @@
         private System.Windows.Forms.ToolStripMenuItem iP설정초기화ToolStripMenuItem;
         private System.Windows.Forms.ListBox connectListBox;
         private System.Windows.Forms.CheckBox operationalStatusCheckBox;
+        private System.Windows.Forms.ToolStripMenuItem 문의사항ToolStripMenuItem;
     }
 }
 
