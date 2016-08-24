@@ -22,3 +22,10 @@ D:\backup\document\Projects\ipChanger\ipChanger\obj\x86\Release\ipChanger.csproj
 C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\bin\Release\ipChanger.exe.config
 C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ipChanger.exe
 C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ipChanger.pdb
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\bin\Release\ipChanger.exe
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\bin\Release\ipChanger.pdb
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ipChanger.csprojResolveAssemblyReference.cache
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ip_Changer.Form1.resources
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ip_Changer.IpSetting.resources
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ip_Changer.Properties.Resources.resources
+C:\Users\Maroon5\Documents\GitHub\ipchanger\ipChanger\ipChanger\obj\x86\Release\ipChanger.csproj.GenerateResource.Cache

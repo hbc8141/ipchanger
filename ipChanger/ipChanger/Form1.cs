@@ -56,7 +56,7 @@ namespace ip_Changer
             sb.Append("/system.ini");
             filePath = sb.ToString();
             sb.Clear();
-            MessageBox.Show(filePath);
+
             pro = new Process();
             proInfo = new ProcessStartInfo();
         } // form 생성        
@@ -297,7 +297,7 @@ namespace ip_Changer
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (ProcessLength == 1 && ipsetting.IsEscapeKeyDown)
+            if (ProcessLength == 1 && !ipsetting.IsEscapeKeyDown)
             {
                 WritePrivateProfileString("ip", "ip", ipsetting.IP, filePath);
                 WritePrivateProfileString("submask", "submask", ipsetting.SubnetMask, filePath);
